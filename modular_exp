@@ -1,7 +1,7 @@
 def mod_exp(x, y, N):
     """
     Input: two integers, x and N, an integer exponent y
-    Output: x^y mode N   
+    Output: x^y mod N   
 
     """
     if y == 0:
