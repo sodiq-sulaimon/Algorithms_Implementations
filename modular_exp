@@ -1,0 +1,15 @@
+def mod_exp(x, y, N):
+    """
+    Input: two integers, x and N, an integer exponent y
+    Output: x^y mode N   
+
+    """
+    if y == 0:
+        return 1
+    z = mod_exp(x, y // 2, N)
+    if y % 2 == 0:
+        return z**2 % N
+    else:
+        return x * (z**2 % N)
+    
+print(mod_exp(2, 4, 5)) # should output 1
