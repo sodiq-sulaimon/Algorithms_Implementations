@@ -1,4 +1,9 @@
 def multiply(x, y):
+    """
+    Input: two integers, x and y, where y >= 0
+    Output: Their product
+    
+    """
     if y == 0:
         return 0
     z = multiply(x, y // 2) # y // 2 is floor division
@@ -7,4 +12,4 @@ def multiply(x, y):
     else:
         return x + 2*z
     
-print(multiply(8, 5))
+print(multiply(3, 5))
